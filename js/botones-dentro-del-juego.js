@@ -6,7 +6,7 @@ function nuevoJuego(){
     espacio = 10;
     letrasEncontradas = 0;
     activarTeclas = true;
-    imagen.src = "Imagenes/ahorcado-plataforma.png"
+    imagen.src = "imagenes/ahorcado-plataforma.png"
     palabra = palabraRandom();
 
     limpiarCanva();
