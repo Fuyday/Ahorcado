@@ -1,4 +1,4 @@
-var palabras = ["OSO","CAMION"];
+var palabras = ["OSO","CAMION","ARAÑA","PERRO","LIBRO","CANCION","PELICULA"];
 var areaDeAhorcado = document.querySelector(".canvas");
 var pincel = areaDeAhorcado.getContext("2d");
 var palabra = palabraRandom().split("");
