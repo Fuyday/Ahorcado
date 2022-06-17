@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ahorcado - Alura</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header class="caja-superior">
+            <h1 class="titulo-principal">Ahorcado Alura</h1>
+        </header>
+        <main class="caja-media">
+            <div>
+                <button class="btnInicio">Iniciar Juego</button>
+                <button class="btnAgregarPalabra">Agregar Palabra</button>
+            <div id="area-de-juego" class="invisible">
+                <img src="imagenes/ahorcado-plataforma.png" id="ahorcado">
+                <canvas class="canvas" height="200px" width="1200"></canvas>
+                <button class="nuevo-juego"> Nuevo Juego </button>
+                <button class="regresar">Regresar al menu</button>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    <script src="js/ahorcado-script.js"></script>
+    <script src="js/pantalla-de-inicio.js"></script>
+    <script src="js/presionar-teclas.js"></script>
+    <script src="js/botones-dentro-del-juego.js"></script>
+    <script src="js/ganaste-perdiste.js"></script>
+    
+</html>

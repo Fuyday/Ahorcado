@@ -1,0 +1,33 @@
+body{
+    width: auto;
+}
+header{
+    width: 90%;
+    margin: 0 auto;
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.caja-media{
+    text-align: center;
+}
+
+#ahorcado{
+    height: 350px;
+}
+
+.canvas{
+    width: 90%;
+    margin: auto 0;
+    display: block;
+    
+}
+
+.invisible{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
