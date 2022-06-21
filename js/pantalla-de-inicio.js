@@ -1,18 +1,34 @@
 function iniciar(){
     document.querySelector("#area-de-juego").classList.remove("invisible");
-    document.querySelector(".btnInicio").classList.add("invisible");
-    document.querySelector(".btnAgregarPalabra").classList.add("invisible");
+    document.querySelector("#area-botones-inicio").classList.add("invisible");  
+    document.querySelector(".titulo-principal").classList.add("invisible"); 
     nuevoJuego();
 }
 
-var btnInicio = document.querySelector(".btnInicio");
+var btnInicio = document.querySelector("#btnInicio");
 btnInicio.onclick = iniciar;
 
-function agregarPalabra(){
-    var nuevaPalabra = prompt("ingrese nueva palabra");
-    palabras.push(nuevaPalabra)
-
+function iniciarJuegoPropio(){
+    juegoPropio();
 }
 
-var btnAgregarPalabra = document.querySelector(".btnAgregarPalabra");
+
+var btnIniciarJuegoPropio = document.querySelector("#btnJuegoPropio");
+btnIniciarJuegoPropio.onclick = iniciarJuegoPropio;
+
+
+//agregar palabras a juego propio
+function agregarPalabra(){
+   palabraNueva();
+}
+
+var btnAgregarPalabra = document.querySelector("#btnAgregarPalabra");
 btnAgregarPalabra.onclick = agregarPalabra;
+
+function limpiarPalabras(){
+    limpiar();
+}
+
+
+var btnLimpiarPalabras = document.querySelector("#btnLimpiarPalabras");
+btnLimpiarPalabras.onclick = limpiarPalabras;

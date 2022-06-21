@@ -5,33 +5,62 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
         <title>Ahorcado - Alura</title>
-        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
-        <header class="caja-superior">
-            <h1 class="titulo-principal">Ahorcado Alura</h1>
+        <header>
+            <div class="caja-superior">
+                <div class="area-titulo">
+                    <img src="imagenes/Logo.png" id="logo">
+                    <h1 class="titulo-principal">El Ahorcado</h1>
+                </div>
+         </div>
         </header>
-        <main class="caja-media">
-            <div>
-                <button class="btnInicio">Iniciar Juego</button>
-                <button class="btnAgregarPalabra">Agregar Palabra</button>
-            <div id="area-de-juego" class="invisible">
-                <img src="imagenes/ahorcado-plataforma.png" id="ahorcado">
-                <canvas class="canvas" height="200px" width="1200"></canvas>
-                <button class="nuevo-juego"> Nuevo Juego </button>
-                <button class="regresar">Regresar al menu</button>
+        <main>
+            <div class="caja-media">
+                <div id="area-botones-inicio">
+                    <button class="boton-pantalla-inicio" id="btnInicio">Iniciar Juego</button>
+                    <button class="boton-pantalla-inicio" id="btnJuegoPropio">Juego Propio</button>
+                    <button class="boton-pantalla-inicio" id="btnAgregarPalabra">Agregar Palabra</button>
+                    <button class="boton-pantalla-inicio" id="btnLimpiarPalabras">Limpiar Palabras</button>
+                </div>
+
+                <div class="invisible" id="area-de-juego">
+                    <div id="juego">
+                        <p id="score"> Score 0   </p>
+                        <img src="imagenes/ahorcado-plataforma.png" id="ahorcado" alt="Plataforma del ahorcado">
+                        <canvas class="canvas" height="200px" width="1200"></canvas>
+                    </div>
+                    <div id="botones-juego">
+                        <button id="rendirse"> Rendirse </button>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
-
+            <img class="umbreon" src="imagenes/umbreon.png" alt="Umbreon-pixelArt">
+            <p>Fuyday - 2022</p> 
+            <p>© Copyright</p>
+            <p>
+                <a href="https://github.com/Fuyday"><buttom><img class="logo-github" src="imagenes/logo-github.png" alt="logo-github"></buttom></a>
+                
+                <a href="https://www.linkedin.com/in/fuyday-7560ab23b/"><buttom><img class="logo-linkedin" src="imagenes/logo-linkedin.png" alt="logo-linkedin"></buttom></a>
+            </p>
         </footer>
-    <script src="js/ahorcado-script.js"></script>
-    <script src="js/pantalla-de-inicio.js"></script>
-    <script src="js/presionar-teclas.js"></script>
-    <script src="js/botones-dentro-del-juego.js"></script>
-    <script src="js/ganaste-perdiste.js"></script>
+        <script src="js/ahorcado-script.js"></script>
+        <script src="js/pantalla-de-inicio.js"></script>
+        <script src="js/juego-propio-script.js"></script>
+        <script src="js/agregar-palabra-script.js"></script>
+        <script src="js/limpiar-palabra-script.js"></script>
+        <script src="js/presionar-teclas.js"></script>
+        <script src="js/botones-dentro-del-juego.js"></script>
+        <script src="js/ganaste-perdiste.js"></script>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
     
 </html>
