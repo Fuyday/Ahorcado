@@ -6,7 +6,7 @@ async function palabraNueva(){
                             popup: 'disenho-alerta'
                         },
                         title: `Agregar Palabra`,
-                        text: `Esta palabra sera agregada a "Juego Propio`,
+                        text: `Esta palabra sera agregada a "Juego Propio"`,
                         input: `text`,
                         inputValue: ` `,
                         inputPlaceholder: `Ingrese Palabra`,
