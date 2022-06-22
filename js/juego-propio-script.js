@@ -15,10 +15,28 @@ function juegoPropio(){
         stopKeydownPropagation: false      
     }).then((result) => {
         if (result.isConfirmed) {
-            document.querySelector("#area-de-juego").classList.remove("invisible");
-            document.querySelector("#area-botones-inicio").classList.add("invisible");  
-            document.querySelector(".titulo-principal").classList.add("invisible"); 
-            nuevoJuegoPropio();
+            if(palabrasPropias.length == 0){
+                swal.fire({
+                    customClass: {
+                        popup: 'disenho-alerta'
+                    },
+                    icon: 'error',
+                    title: 'No hay palabra',
+                    text: 'Debe agregar palabras en "Agregar Palabras" antes de empezar',
+                    confirmButtonText: 'Continuar',
+                    allowOutsideClick: false,
+                    allowEscapeKey: false,
+                    allowEnterKey: false,
+                    stopKeydownPropagation: false      
+                })
+            }
+            else{
+                document.querySelector("#area-de-juego").classList.remove("invisible");
+                document.querySelector("#area-botones-inicio").classList.add("invisible");  
+                document.querySelector(".titulo-principal").classList.add("invisible"); 
+                nuevoJuegoPropio();
+            }
+  
         }
       })
 }
