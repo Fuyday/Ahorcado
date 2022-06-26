@@ -68,6 +68,7 @@ body{
     border-radius: 15px;
     background-color: #35858B;
     transition: 1s;
+    font-weight: bold ;
 }
 
 .boton-pantalla-inicio:hover{
