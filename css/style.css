@@ -168,7 +168,9 @@ footer{
     .canvas{
         width: 100%;
     }
-    
+    #rendirse{
+        margin: 20px auto;
+    }
 }
 
 @media screen and (min-width: 760x){
@@ -181,6 +183,9 @@ footer{
      }
      .canvas{
          width: 100%;
+     }
+     #rendirse{
+        margin: 20px auto;
      }
      
  }
