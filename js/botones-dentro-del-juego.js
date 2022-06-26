@@ -19,15 +19,14 @@ function regresarMenu(){
 var btnRegresarMenu = document.querySelector(".regresar");
 
 function rendirse(){
-   erroresPermitidos = 0;
-   reiniciarPuntaje()
-   if(palabra = palabraRandom()){
-        erroresActuales();
-   }
-   if(palabra = palabraJuegoPropio()){
-        erroresActualesJuegoPropio();
-   }
- 
+    erroresPermitidos = 0;
+    reiniciarPuntaje()
+    if(palabrasPropias.includes(palabra)){
+         erroresActualesJuegoPropio();
+     }
+    else if(palabras.includes(palabra) ){
+         erroresActuales();
+    } 
 }
 
 var btnRendirse = document.querySelector("#rendirse");
