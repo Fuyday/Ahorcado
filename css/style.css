@@ -154,37 +154,31 @@ footer{
 
 }
 
-
 @media screen and (min-width: 0){
-   .caja-superior, .caja-media, .footer{
-       width: 100%;
-    }
-
-    #juego{
-        margin-top: 55px;
-    }
-    .canvas{
-        width: 100%;
-    }
-    #rendirse{
-        margin: 20px auto;
-    }
-}
-
-@media screen and (min-width: 760x){
     .caja-superior, .caja-media, .footer{
         width: 100%;
      }
  
      #juego{
-         margin-top: 55px;
+         margin-top: 15px;
      }
      .canvas{
          width: 100%;
      }
-     #rendirse{
-        margin: 20px auto;
-     }
      
  }
  
+ @media screen and (min-width: 760x){
+     .caja-superior, .caja-media, .footer{
+         width: 100%;
+      }
+  
+      #juego{
+          margin-top: 15px;
+      }
+      .canvas{
+          width: 100%;
+      }
+ 
+  }
+  
