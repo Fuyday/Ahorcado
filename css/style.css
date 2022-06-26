@@ -1,10 +1,10 @@
 @font-face{
     font-family: 'Paytone One', sans-serif;
     src: url("PaytoneOne-Regular.ttf") format("truetype");
-
 }
 body{
     width: auto;
+    height: auto;
     background: linear-gradient(#35858B,#4FBDBA);
 }
 
@@ -76,6 +76,7 @@ body{
 }
 
 /* dentro del juego*/
+
 #area-de-juego{
     position: absolute;
     top: 50px;
@@ -91,7 +92,6 @@ body{
 #ahorcado{
     height: 350px;
 }
-
 
 .canvas{
     font-family: 'Potta One';
@@ -127,6 +127,10 @@ body{
     transform: scale(1.1);
 }
 
+#input-invisible{
+    opacity: 0%;
+}
+
 .disenho-alerta{
     border-radius: 35px !important;
 }
@@ -136,6 +140,8 @@ footer{
     text-align: center;
     color: white;
     margin-top: 20px;
+    width: 100%;
+    padding-bottom: auto;
 }
 
 .umbreon{
@@ -151,22 +157,31 @@ footer{
 }
 
 
-@media screen and (max-width:500px){
-   .caja-superior, .caja-media{
-       width: auto;
+@media screen and (min-width: 0){
+   .caja-superior, .caja-media, .footer{
+       width: 100%;
     }
 
+    #juego{
+        margin-top: 55px;
+    }
     .canvas{
-        width: auto;
+        width: 100%;
     }
-
-    
     
 }
 
-@media screen and (max-width:950px){
-    .caja-superior, .caja-media{
-        width: auto;
+@media screen and (min-width: 760x){
+    .caja-superior, .caja-media, .footer{
+        width: 100%;
      }
  
-}
+     #juego{
+         margin-top: 55px;
+     }
+     .canvas{
+         width: 100%;
+     }
+     
+ }
+ 
